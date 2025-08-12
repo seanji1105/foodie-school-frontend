@@ -35,8 +35,9 @@ const Header = () => {
     <header className="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* 로고 */}
-        <div className="text-2xl font-bold text-primary">
+        <div className="text-2xl font-bold text-primary flex">
           <Link to="/">급식평가</Link>
+          <p className="text-sm ml-2 mt-3">beta</p>
         </div>
 
         {/* 데스크탑 메뉴 */}

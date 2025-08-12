@@ -34,9 +34,10 @@ const Signup = () => {
         window.location.href = "/login";
       } else {
         const data = await res.json();
-        setErrorMsg(data.message || "회원가입 실패");
+        setErrorMsg(data.error || data.message || "회원가입 실패");
       }
     } catch (err) {
+      console.error("회원가입 중 오류:", err);
       setErrorMsg("서버와 통신 중 오류가 발생했습니다.");
     }
     setLoading(false);
