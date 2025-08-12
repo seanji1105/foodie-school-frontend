@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb; /* tailwind.config.js light 색상 값 */
+  color: #374151; /* text-gray-800 색상값 */
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-all duration-300;
+  }
+  .btn-primary {
+    @apply text-white;
+    background-color: #3b82f6; /* primary */
+  }
+  .btn-primary:hover {
+    background-color: #2563eb; /* primary-dark */
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-500 hover:bg-gray-300;
+  }
+}
