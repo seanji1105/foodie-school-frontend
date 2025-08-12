@@ -50,7 +50,7 @@ const DateDetailPage = () => {
     async function fetchMealDetail() {
       try {
         const res = await fetch(
-          `https://https://foodie-school-backend.vercel.app/meals/detail?schoolName=${encodeURIComponent(
+          `https://foodie-school-backend.vercel.app/meals/detail?schoolName=${encodeURIComponent(
             school
           )}&date=${dateRaw}`
         );
