@@ -50,7 +50,7 @@ const DateDetailPage = () => {
     async function fetchMealDetail() {
       try {
         const res = await fetch(
-          `https://foodie-school-backend-production.up.railway.app/meals/detail?schoolName=${encodeURIComponent(
+          `https://https://foodie-school-backend.vercel.app/meals/detail?schoolName=${encodeURIComponent(
             school
           )}&date=${dateRaw}`
         );
@@ -84,7 +84,7 @@ const DateDetailPage = () => {
     async function fetchReviews() {
       try {
         const res = await fetch(
-          `https://foodie-school-backend-production.up.railway.app/reviews?schoolName=${encodeURIComponent(
+          `https://foodie-school-backend.vercel.app/reviews?schoolName=${encodeURIComponent(
             school
           )}&date=${dateRaw}`
         );
@@ -105,7 +105,7 @@ const DateDetailPage = () => {
 
     try {
       const res = await fetch(
-        `https://foodie-school-backend-production.up.railway.app/reviews?schoolName=${encodeURIComponent(
+        `https://foodie-school-backend.vercel.app/reviews?schoolName=${encodeURIComponent(
           school
         )}&date=${dateRaw}`
       );
@@ -126,7 +126,7 @@ const DateDetailPage = () => {
     }
     try {
       const res = await fetch(
-        "https://foodie-school-backend-production.up.railway.app/reviews",
+        "https://foodie-school-backend.vercel.app/reviews",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

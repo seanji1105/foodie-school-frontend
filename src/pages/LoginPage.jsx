@@ -17,7 +17,7 @@ const Login = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "https://foodie-school-backend-production.up.railway.app/login",
+        "https://foodie-school-backend.vercel.app/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
