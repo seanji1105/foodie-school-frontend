@@ -20,7 +20,9 @@ const SchoolPage = () => {
     const fetchMeals = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/meals?schoolName=${encodeURIComponent(school)}`
+          `https://foodie-school-backend-production.up.railway.app/meals?schoolName=${encodeURIComponent(
+            school
+          )}`
         );
         const data = await res.json();
 

@@ -8,7 +8,7 @@ const Header = () => {
 
   // 로그인 상태 확인
   useEffect(() => {
-    fetch("http://localhost:3000/me", {
+    fetch("https://foodie-school-backend-production.up.railway.app/me", {
       credentials: "include",
     })
       .then(async (res) => {
@@ -23,10 +23,13 @@ const Header = () => {
   }, []);
 
   const handleLogout = async () => {
-    await fetch("http://localhost:3000/logout", {
-      method: "POST",
-      credentials: "include",
-    });
+    await fetch(
+      "https://foodie-school-backend-production.up.railway.app/logout",
+      {
+        method: "POST",
+        credentials: "include",
+      }
+    );
     setUser(null);
     navigate("/");
   };
