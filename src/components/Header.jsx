@@ -8,7 +8,7 @@ const Header = () => {
 
   // 로그인 상태 확인
   useEffect(() => {
-    fetch("https://foodie-school-backend.vercel.app/me", {
+    fetch("https://api.tnesports.kr/me", {
       credentials: "include",
     })
       .then(async (res) => {
@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   const handleLogout = async () => {
-    await fetch("https://https://foodie-school-backend.vercel.app/logout", {
+    await fetch("https://api.tnesports.kr/logout", {
       method: "POST",
       credentials: "include",
     });

@@ -16,15 +16,12 @@ const Login = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(
-        "https://foodie-school-backend.vercel.app/login",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include", // 쿠키 포함
-          body: JSON.stringify({ username, password }),
-        }
-      );
+      const res = await fetch("https://api.tnesports.kr/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include", // 쿠키 포함
+        body: JSON.stringify({ username, password }),
+      });
       if (res.ok) {
         // 로그인 성공
         // 예: 홈으로 리다이렉트 또는 상태 업데이트

@@ -23,14 +23,11 @@ const Signup = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(
-        "https://foodie-school-backend.vercel.app/signup",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username, name, password }),
-        }
-      );
+      const res = await fetch("https://api.tnesports.kr/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, name, password }),
+      });
 
       if (res.ok) {
         // 회원가입 성공 시 로그인 페이지로 이동

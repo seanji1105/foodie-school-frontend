@@ -20,7 +20,7 @@ const SchoolPage = () => {
     const fetchMeals = async () => {
       try {
         const res = await fetch(
-          `https://foodie-school-backend.vercel.app/meals?schoolName=${encodeURIComponent(
+          `https://api.tnesports.kr/meals?schoolName=${encodeURIComponent(
             school
           )}`
         );
