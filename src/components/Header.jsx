@@ -9,6 +9,7 @@ const Header = () => {
   // 로그인 상태 확인
   useEffect(() => {
     fetch("https://api.tnesports.kr/me", {
+      method: "GET",
       credentials: "include",
     })
       .then(async (res) => {
