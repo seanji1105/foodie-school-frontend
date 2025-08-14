@@ -23,7 +23,7 @@ const HomePage = () => {
         <div className="flex justify-center shadow-lg rounded-lg max-w-xl mx-auto">
           <input
             type="text"
-            placeholder="Enter your school name"
+            placeholder="학교 이름을 입력해주세요"
             className="w-full px-5 py-3 border-r-0 border-gray-200 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary"
             value={schoolName}
             onChange={(e) => setSchoolName(e.target.value)}
